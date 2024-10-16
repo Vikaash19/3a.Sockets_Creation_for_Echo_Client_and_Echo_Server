@@ -1,7 +1,7 @@
 # 3a.CREATION FOR ECHO CLIENT AND ECHO SERVER USING TCP SOCKETS
 ### Name: Vikaash K S
 ### Register Number: 212223240179
-# AIM
+# AIM:
 To write a python program for creating Echo Client and Echo Server using TCP
 Sockets Links.
 ## ALGORITHM:
@@ -20,6 +20,7 @@ while True:
     msg=input("Client > ")
     s.send(msg.encode())
     print("Server > ",s.recv(1024).decode())
+
 ```
 ### Server:
 ```
@@ -31,8 +32,9 @@ c,addr=s.accept()
 while True:
     ClientMessage=c.recv(1024).decode()
     c.send(ClientMessage.encode())
+
 ```
-## OUPUT
+## OUPUT:
 ### Client:
 ![exp 3a client](https://github.com/user-attachments/assets/e56a6904-39cb-490f-a0b0-9da604a67878)
 
@@ -40,5 +42,4 @@ while True:
 ![exp 3a server](https://github.com/user-attachments/assets/160691df-7b53-4d93-ae66-4736a07fd9b0)
 
 ## RESULT
-Thus, the python program for creating Echo Client and Echo Server using TCP Sockets Links 
-was successfully created and executed.
+Thus, the python program for creating Echo Client and Echo Server using TCP Sockets Links was successfully created and executed.
